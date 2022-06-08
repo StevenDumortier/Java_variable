@@ -22,6 +22,6 @@ public class Variables {
 
         // chaine de caracteres et caracters
         String prenom="Steven"; // chaine de caracteres
-        char genre = m;
+       // char genre = m;
     }
 }
