@@ -3,7 +3,8 @@ public class exo9AfficherLeMoisCorrespondant {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.print("Afficher le numero du mois : ");
-        int mois = input.nextInt();
+        byte mois = input.nextByte();
+       // uniquement test d'égalité on fait switch case, attention ne pas oublié break
         switch (mois)
         {
             case 1:

@@ -2,8 +2,10 @@ import java.util.Scanner;
 public class exo7PairImpairNul {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+
         System.out.print("Entrez un numéro : ");
         int numero = input.nextInt();
+
         if (numero % 2 == 0)
         {
             if (numero < 0)
@@ -16,7 +18,7 @@ public class exo7PairImpairNul {
             }
             else
             {
-                System.out.printf("Le numéro %d est nul", numero);
+                System.out.printf("Le numéro %d est nul et est pair", numero);
             }
         }
         else
@@ -31,7 +33,7 @@ public class exo7PairImpairNul {
             }
             else
             {
-                System.out.printf("Le numéro %d est nul", numero);
+                System.out.printf("Le numéro %d est nul et est pair", numero);
             }
         }
 
