@@ -1,6 +1,6 @@
 public class exo1Age {
     public static void main(String[] args) {
-        int age = 14;
+        int age = 25;
         if (age>=7 && age<=9)
         {
             System.out.println("Catégorie Poussin");
@@ -20,6 +20,10 @@ public class exo1Age {
         else if (age == 16 || age ==17)
         {
             System.out.println("Catégorie Pupille");
+        }
+        else
+        {
+            System.out.println("L'age n'entre dans aucune catégorie");
         }
     }
 }
