@@ -7,8 +7,8 @@ public class Affichage {
         boolean estMarie=false;
         System.out.println("Vous vous appelez " +nom+", vous avez " +age+" ans. Poids : "+poids+ " kg");
 
-        // %s pour texte (string),%c (pour char) %d nb ss virgule (byte,integer)  %f nb à virgule (float,double)
-        // %.1f  pour afficher un seul nombre après la virgule, %.2f affiché 2 nb après ,
+//         %s pour texte (string),%c (pour char) %d nb ss virgule (byte,integer)  %f nb à virgule (float,double)
+//         %.1f  pour afficher un seul nombre après la virgule, %.2f affiché 2 nb après ,
         System.out.printf("Vous vous appelez %s, vous avez %d ans. Poids %.1f kg\n",nom,age,poids);
 
         // Avec operateur ternaire
