@@ -21,7 +21,7 @@ public class exo15VerifierUniquementTexteNombre {
                 if (o == codePIN.length())
                 {
                     System.out.println("Vous avez saisi que des nombres");
-                    break;
+                    System.exit(1);
                 }
             }
             codePIN = input.nextLine();
