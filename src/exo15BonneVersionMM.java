@@ -1,6 +1,6 @@
 import java.util.Scanner;
-import java.util.regex.*;
-public class exo15BonneVersion
+
+public class exo15BonneVersionMM
 {
     public static void main(String[] args) {
         var input = new Scanner(System.in);

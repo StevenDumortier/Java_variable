@@ -1,32 +1,29 @@
 import java.util.Scanner;
-import java.util.regex.*;
 
-public class exo15_2AjoutTousLesCodeseEXO15_BoucleWhileBonneVersion {
+public class exo15_BonneVersionSD {
         public static void main(String[] args) {
             var input = new Scanner(System.in);
-            String codePIN="";
+            String codePIN = "";
             System.out.println("Veuillez definir un code PIN a 4 caracteres : ");
-            while (true){
+            while (true) {
                 System.out.print("Code PIN : ");
-                codePIN=input.nextLine();
-                boolean checkNumeric = true;
-                checkNumeric=codePIN.matches("[+-]?\\d*(\\.\\d+)?");
-                if(checkNumeric)
+                codePIN = input.nextLine();
+                for (int i = 0; i <= codePIN.length()-1; i++)
                 {
-                    if(codePIN.length() == 4)
+                    if (!Character.isDigit(codePIN.charAt(i)))
                     {
-                        System.out.println("Code PIN defini avec succes");
-                        break;
-                    }
-                    else
-                    {
-                        System.out.println("Error : Saisissez 4 chiffres numérique");
+                        i=-1;
+                        System.out.println("Error : Le code PIN doit etre compose que de chiffre");
+                        codePIN = input.nextLine();
                     }
                 }
-                else if (checkNumeric==false)
-                System.out.println("Error : Le code PIN doit etre compose de 4 caracteres numerique, recommencez");
+                if (codePIN.length() == 4) {
+                    System.out.println("Code PIN defini avec succes");
+                    break;
+                }
+                System.out.println("Error : Le code PIN doit etre compose de 4 caracteres");
             }
-
+//
             System.out.println("************************");
             System.out.println("**Telephone verrouille**");
             System.out.println("************************");
@@ -35,7 +32,7 @@ public class exo15_2AjoutTousLesCodeseEXO15_BoucleWhileBonneVersion {
             while (true) {
                 System.out.print("Entrez votre code PIN pour deverouiller l'appareil : ");
                 codeATester = input.nextLine();
-                if(codeATester.equals(codePIN)){
+                if (codeATester.equals(codePIN)) {
                     System.out.println("Bravo, appareil deverouille");
                     break;
                 }
@@ -43,4 +40,5 @@ public class exo15_2AjoutTousLesCodeseEXO15_BoucleWhileBonneVersion {
             }
         }
     }
+
 
