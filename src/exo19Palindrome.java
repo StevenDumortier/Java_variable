@@ -9,6 +9,7 @@ public class exo19Palindrome {
         for (int i = nom.length()-1;i>=0;i--){
             nomInverser += nom.charAt(i);
             }
+        System.out.println(nomInverser);
         if (nom.equals(nomInverser))
         {
             System.out.println("Le nom " + nom + " est bien un Palindrome ");
