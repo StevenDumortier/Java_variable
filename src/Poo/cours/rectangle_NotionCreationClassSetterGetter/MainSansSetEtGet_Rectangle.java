@@ -1,6 +1,6 @@
-package Poo;
+package Poo.cours.rectangle_NotionCreationClassSetterGetter;
 
-public class Main {
+public class MainSansSetEtGet_Rectangle {
     public static void main(String[] args) {
         System.out.println("***********");
         System.out.println("**Objet 1**");

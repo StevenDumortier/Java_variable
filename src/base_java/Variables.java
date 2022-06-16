@@ -8,7 +8,7 @@ public class Variables {
         //Les entiers
         byte age=18;
 
-        //Calcul Poo.Rectangle
+        //Calcul Poo.cours.rectangleAvecSetterGetter.Rectangle
         int longueur = 50;
         int largeur = 25;
         int surface = longueur*largeur;

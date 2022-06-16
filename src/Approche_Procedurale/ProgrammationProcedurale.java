@@ -17,7 +17,7 @@ public class ProgrammationProcedurale {
 
         public static void main(String[] args) {
             float poids=5.6f;
-            //Poo.Rectangle 1
+            //Poo.cours.rectangleAvecSetterGetter.Rectangle 1
             float longueur=500.5F;
             float largeur=250F;
 
@@ -26,7 +26,7 @@ public class ProgrammationProcedurale {
 
             System.out.printf("Surface 1 : %f\nPerimetre 1 : %f\n",surface,perimetre);
 
-            //Poo.Rectangle 2
+            //Poo.cours.rectangleAvecSetterGetter.Rectangle 2
             float longueur2=33f;
             float largeur2=45f;
 
