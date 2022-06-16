@@ -6,7 +6,7 @@ public class exo9AfficherLeMoisCorrespondant {
         Scanner input = new Scanner(System.in);
         System.out.print("Afficher le numero du mois : ");
         byte mois = input.nextByte();
-       // uniquement test d'égalité on fait switch case, attention ne pas oublié break
+       // uniquement Poo.test.test d'égalité on fait switch case, attention ne pas oublié break
         switch (mois)
         {
             case 1:

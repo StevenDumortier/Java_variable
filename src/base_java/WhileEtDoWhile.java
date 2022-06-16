@@ -3,7 +3,7 @@ package base_java;
 public class WhileEtDoWhile {
     public static void main(String[] args) {
         int age=23;
-        //On n'entre jamais dans la boucle parce qu'il le test qui s'execute en premier
+        //On n'entre jamais dans la boucle parce qu'il le Poo.test.test qui s'execute en premier
         while (age<18){
             System.out.println("Inferieur -- while(condition){...}");
         }

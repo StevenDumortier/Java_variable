@@ -27,4 +27,5 @@ public abstract class Personnage {
 
     //classe abstraite + méthode abstraire = force les classes fils à redefinir
     public abstract void rencontrer();
+
 }
