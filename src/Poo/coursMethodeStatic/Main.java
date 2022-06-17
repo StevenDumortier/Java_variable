@@ -26,7 +26,7 @@ package Poo.coursMethodeStatic;
                     continue;
                 }
 
-                if(!Validator.minMax(motDePasse,AppConfigurations.MAX_PASSWORD,
+                if(!Validator.minMax(motDePasse,AppConfigurations.MIN_PASSWORD,
                         AppConfigurations.MAX_PASSWORD)){
                     System.out.println("Le mot de doit avoir entre 8 et 15 caractères");
                 }
