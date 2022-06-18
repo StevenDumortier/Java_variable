@@ -7,7 +7,6 @@ public class tp9CaractèreQuiseSuivent {
         Scanner input = new Scanner(System.in);
         System.out.print("Rentrez un nom : ");
         String nom = input.nextLine();
-        boolean repetition = true;
         for (int i=0; i<=nom.length();i++){
 
             if (nom.charAt(i) == nom.charAt(i+1))

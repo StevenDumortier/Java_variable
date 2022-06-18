@@ -42,7 +42,10 @@ public class ProgrammationProcedurale2 {
             return somme;
         }
 
+
+
         public static void main(String[] args) {
+
             int[] tableau1={1,2,3,4,5,6,7,8,9};
             int sommeTableau1=sommeElementTableau(tableau1);
 

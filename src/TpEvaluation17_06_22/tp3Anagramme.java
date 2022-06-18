@@ -17,7 +17,7 @@ public class tp3Anagramme {
             System.exit(1);
         }
         char[] motEnTableau = mot.toLowerCase().toCharArray();
-        Arrays.sort(motEnTableau);
+        Arrays.sort(motEnTableau); //sort pour ranger le tableau dans l'ordre alphabetique
 
         char[] mot2EnTableau = mot2.toLowerCase().toCharArray();
         Arrays.sort(mot2EnTableau);

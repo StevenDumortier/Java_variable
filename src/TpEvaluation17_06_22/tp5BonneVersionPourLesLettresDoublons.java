@@ -3,7 +3,7 @@ package TpEvaluation17_06_22;
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class tp5version2 {
+public class tp5BonneVersionPourLesLettresDoublons {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);

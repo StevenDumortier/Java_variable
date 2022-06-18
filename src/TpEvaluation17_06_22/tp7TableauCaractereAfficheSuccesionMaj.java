@@ -12,15 +12,15 @@ public class tp7TableauCaractereAfficheSuccesionMaj {
         ArrayList<Character> tabLettreMaj = new ArrayList<>();
 
         int i = 0;
-        char lettreMajuscule;
         char lettre;
 
         while (true){
 
-            System.out.print("Donnez une lettre, si vous avez termine appuye sur entree");
+            System.out.print("Donnez une lettre, si vous avez termine appuye sur ',' : ");
             lettre = input.next().charAt(0);
+            lettre = Character.toLowerCase(lettre);
 
-            if (lettre == 'm')
+            if (lettre == ',')
             {
                 break;
             }
@@ -28,10 +28,7 @@ public class tp7TableauCaractereAfficheSuccesionMaj {
             tabLettre.add(lettre);
 
             if (i%2 == 0) {
-                lettreMajuscule = Character.toUpperCase(lettre);
-                tabLettreMaj.add(lettreMajuscule);
-                i++;
-                continue;
+                lettre = Character.toUpperCase(lettre);
             }
             i++;
             tabLettreMaj.add(lettre);

@@ -13,15 +13,19 @@ public class tp1CreationTableauAfficheMinMax {
             if (min > nombre[i])
                 min = nombre[i];
         }
-        System.out.print("Tableau [ ");
+        System.out.print("Tableau [");
 
         for (int i = 0;i<nombre.length;i++) {
-            System.out.print(", "+nombre[i]);
+            if (i==0) {
+                System.out.print(nombre[i]);
+            }
+            else if (i!=0){
+            System.out.print(", "+nombre[i]);}
 
-            if (nombre[i]==min)
-            System.out.print("(PP)");
-            if (nombre[i]==max)
-            System.out.print("(PG)");
+            if (nombre[i]==min){
+            System.out.print("(PP)");}
+            if (nombre[i]==max){
+            System.out.print("(PG)");}
         }
         System.out.print("]");
 //        System.out.println(Arrays.toString(nombre));

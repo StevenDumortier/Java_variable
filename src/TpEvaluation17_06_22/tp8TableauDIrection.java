@@ -14,7 +14,7 @@ public class tp8TableauDIrection {
         String direction;
         while (true) {
             System.out.print("Donnez une direct, Haut, Bas,Droite,Gauche, sinon tapé juste entree quand vous avez terminez :");
-            direction = input.nextLine();
+            direction = input.nextLine().toLowerCase().trim(); // trim pour retirer les espaces avant le mot et après
 //            direction = direction.toLowerCase();
 //            direction = direction.replaceAll("\\s", "");
             if (direction.equals("")) {
@@ -22,7 +22,6 @@ public class tp8TableauDIrection {
             else if (direction.equals("haut") )
             {
                 y++;
-                System.out.println("salut");
             }
             else if (direction.equals("bas"))
             {
