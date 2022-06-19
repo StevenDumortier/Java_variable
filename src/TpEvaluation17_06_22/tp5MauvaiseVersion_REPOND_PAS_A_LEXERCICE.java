@@ -2,7 +2,7 @@ package TpEvaluation17_06_22;
 
 import java.util.Scanner;
 
-public class tp5MauvaiseVersionRetirerLesDoublons {
+public class tp5MauvaiseVersion_REPOND_PAS_A_LEXERCICE {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);

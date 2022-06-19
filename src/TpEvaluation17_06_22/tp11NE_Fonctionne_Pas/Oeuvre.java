@@ -1,22 +1,24 @@
-package TpEvaluation17_06_22.tp11Bibliotheque;
+package TpEvaluation17_06_22.tp11NE_Fonctionne_Pas;
 
 public class Oeuvre extends Auteur {
     private String titre;
     private String langue;
 
-    public Oeuvre(String titre, String nomAuteur,String langue) {
-        super(nomAuteur);
+    private Auteur auteur;
+
+    private String nomAuteur;
+
+    public Oeuvre(String titre,String nomAuteur, boolean prime,String langue){
+        super(nomAuteur, prime);
         this.titre = titre;
-        this.langue=langue;
+        this.langue = langue;
     }
 
-    public Oeuvre(String nomAuteur, String titre) {
-        super(nomAuteur);
+    public Oeuvre(String titre, String nomAuteur,boolean prime) {
+        super(nomAuteur,prime);
         this.titre = titre;
         this.langue = "francais";
     }
-
-    String nomAuteur;
 
     public String getTitre() {
         return titre;
@@ -24,10 +26,7 @@ public class Oeuvre extends Auteur {
 
     public String getNomAuteur(){
         return nomAuteur;
-
     }
-
-
     public String getLangue() {
         return langue;
     }
