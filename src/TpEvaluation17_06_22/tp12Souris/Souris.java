@@ -31,11 +31,12 @@ public class Souris  {
 
     public Souris(Souris souris) {
         this.souris = souris ;
-        this.age = age;
-        this.couleur = couleur;
-        this.esperanceVie = 36;
-        this.clonee = false;
-        System.out.println("Une nouvelle souris !");
+        this.age = souris.age;
+        this.couleur = souris.couleur;
+        this.esperanceVie = souris.esperanceVie * (4/5);
+        this.poids = souris.poids;
+        this.clonee = true;
+        System.out.println("Une nouvelle souris clonee !");
     }
 
 
@@ -49,19 +50,19 @@ public class Souris  {
             System.out.println("Une nouvelle souris !");
 
     }
-    public Souris clone(Souris souris){
-        Souris sourisClone = souris;
-        sourisClone.esperanceVie=(4/5)*souris.esperanceVie;
-        System.out.println("Clonage dune souris !");
-        try{
-            sourisClone = (Souris) super.clone();
-        }
-        catch(CloneNotSupportedException cnse) {
-            cnse.printStackTrace(System.err);
-    }
-
-        return sourisClone;
-    }
+//    public Souris clone(Souris souris){
+//        Souris sourisClone = souris;
+//        sourisClone.esperanceVie=(4/5)*souris.esperanceVie;
+//        System.out.println("Clonage dune souris !");
+//        try{
+//            sourisClone = (Souris) super.clone();
+//        }
+//        catch(CloneNotSupportedException cnse) {
+//            cnse.printStackTrace(System.err);
+//    }
+//
+//        return sourisClone;
+//    }
 
 
 
@@ -87,8 +88,8 @@ public class Souris  {
 
     @Override
     public String toString() {
-        String cloneeText = clonee ? ", [clonéé], " : "";
-        return  "Une Souris " + couleur + cloneeText + "de "+ age + "mois et pesant " + poids + " grammes";
+        String cloneeText = clonee ? ", [clonee], " : "";
+        return  "Une Souris " + couleur + cloneeText + " de "+ age + "mois et pesant " + poids + " grammes";
 }
 
     public void vieillir(Souris souris){
