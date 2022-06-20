@@ -15,7 +15,7 @@ public class Bibliothèque {
 
     public Bibliothèque(String nomBibliotheque) {
         this.nomBibliotheque = nomBibliotheque;
-        System.out.printf("La bibliotheque %s est ouverte",nomBibliotheque);
+        System.out.printf("La bibliotheque %s est ouverte\n",nomBibliotheque);
     }
 
     public String getNomBibliotheque() {
